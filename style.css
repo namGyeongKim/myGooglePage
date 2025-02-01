@@ -1,9 +1,10 @@
 .body__background-color {
   background-color: rgb(20, 83, 154);
+  min-height: 100dvh;
 }
 
 .body__text {
-  font: 13px / 27px Roboto, Arial, sans-serif;
+  font: 14px / 27px Roboto, Arial, sans-serif;
 }
 
 .nav__area {
@@ -21,7 +22,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  padding: 0.5%;
+  padding: 0.6%;
 }
 
 .menu__link {
@@ -47,4 +48,105 @@
 
 .icon-wrapper:hover {
   background: rgba(0, 0, 0, 0.1);
+}
+
+.main__area {
+  min-height: 100vh;
+}
+
+.main__contents-center {
+  flex-direction: column;
+  text-align: center;
+}
+
+.main__google-logo-area {
+  height: 168px;
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.main__google-logo {
+  filter: brightness(0) invert(1); /* 白に変更 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  width: 450px;
+  height: 43px;
+  padding-left: 50px; /*左側にアイコンのスペース確保*/
+  padding-right: 80px;
+  border-radius: 30px; /*inputを丸く*/
+  border: none;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.main__search-icon {
+  position: relative;
+  left: 40px;
+  color: rgb(89, 87, 87);
+}
+
+.mic-icon {
+  position: relative;
+  right: 80px;
+  color: rgb(51, 49, 49);
+}
+
+.mic-icon:hover {
+  color: rgb(134, 132, 132);
+}
+
+.camera-icon {
+  position: relative;
+  right: 60px;
+  color: rgb(51, 49, 49);
+}
+
+.camera-icon:hover {
+  color: rgb(134, 132, 132);
+}
+
+.user__link-area {
+  width: 112px;
+  height: 112px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.user__link-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(16, 66, 123);
+}
+
+.user__link-area:hover {
+  background: rgba(167, 167, 167, 0.1);
+  border-radius: 5px;
+}
+
+.user__link-img {
+  width: 24px;
+  height: 24px;
+}
+
+.user__link-name {
+  color: white;
+}
+
+.user__link-underline {
+  text-decoration: none;
 }
